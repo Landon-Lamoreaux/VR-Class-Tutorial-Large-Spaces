@@ -411,7 +411,7 @@ public class TeleportationLocomotion : MonoBehaviour
                 Vector3 hitPoint = hitGround.ClosestPoint(head.transform.position);
                 float distanceToHead = (hitPoint - head.transform.position).magnitude -
                 head.GetComponent<SphereCollider>().radius;
-                Debug.Log("Immediate Hit: " + hitGround.name);
+                //Debug.Log("Immediate Hit: " + hitGround.name);
                 return distanceToHead;
             }
         }
